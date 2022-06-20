@@ -13,14 +13,14 @@
   <body>
     <% if (data === '') { %>
     <div class="container mt-5 col-lg-6">
-      <p class="display-4 text-center">Weatherly🌤! by <a href="https://pratiksah.com" target="_blank">Pratik</a></p>
+      <p class="display-4 text-center">Weather App🌤!</p>
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Search weather of your location</h5>
+          <h5 class="card-title">Get the weather for any city in the world!</h5>
           <form action="/" method="post">
             <div class="form-group">
               <input type="text" class="form-control" name="location" placeholder="Location">
-              <p class="display-5 mt-3 text-muted">Default location is Purnia, In</p>
+              <p class="display-5 mt-3 text-muted">Default location is Ontario, Ca</p>
             </div>
             <button type="submit" class="btn btn-primary">Go</button>
           </form>
@@ -40,7 +40,7 @@
     </div>
     <% } else { %>
     <div class="container mt-5">
-      <p class="display-4 text-center">Weatherly! by <a href="https://pratiksah.com" target="_blank">Pratik</a></p>
+      <p class="display-4 text-center">Weather App🌤!</p>
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Weather in <%= data.name %>, <%= data.sys.country %></h5>
